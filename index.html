@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Questionnaire de satisfaction étudiante</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Questionnaire de satisfaction</h1>
+  <form id="survey-form">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="faculty">Faculté :</label>
+    <select id="faculty" name="faculty" required>
+      <option value="">Sélectionnez une faculté</option>
+      <option value="science">Science</option>
+      <option value="lettres">Lettres</option>
+      <option value="droit">Droit</option>
+      <option value="medecine">Médecine</option>
+    </select>
+
+    <label>Êtes-vous satisfait(e) des cours ?</label>
+    <select name="satisfaction" required>
+      <option value="">Choisissez</option>
+      <option value="tres_satisfait">Très satisfait(e)</option>
+      <option value="satisfait">Satisfait(e)</option>
+      <option value="neutre">Neutre</option>
+      <option value="insatisfait">Insatisfait(e)</option>
+      <option value="tres_insatisfait">Très insatisfait(e)</option>
+    </select>
+
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
